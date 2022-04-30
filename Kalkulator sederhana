@@ -1,0 +1,43 @@
+<html>
+	<head>
+    	<title>Kalkulator Sederhana</title>
+        <script>
+        	function tambah(){
+				var bil1=document.getElementById('bil1').value;
+                var bil2=document.getElementById('bil2').value;
+               	var hasil=parseInt(bil1)+parseInt(bil2);
+                alert(hasil);
+			}
+            function kurang(){
+            	var bil1=document.getElementById('bil1').value;
+            	var bil2=document.getElementById('bil2').value;
+            	var hasil=parseInt(bil1) - parseInt(bil2);
+            	alert(hasil);
+            }
+            function kali(){
+            	var bil1=document.getElementById('bil1').value;
+       		    var bil2=document.getElementById('bil2').value;
+        	    var hasil=parseInt(bil1) * parseInt(bil2);
+            	alert(hasil);
+            }
+            function bagi(){
+            	var bil1=document.getElementById('bil1').value;
+        	    var bil2=document.getElementById('bil2').value;
+       	     	var hasil=parseInt(bil1) / parseInt(bil2);
+            	alert(hasil);
+            }
+        </script>
+    </head>
+    <body>
+    	<h1>Kalkulator Sederhana</h1>
+        <form>
+        	<input type="number" id="bil1" placeholder="Bilangan 1"><br>
+            <input type="number" id="bil2" placeholder="Bilangan 2"><br>
+            <button type="button" onclick="tambah();">+</button>
+            <button type="button" onclick="kurang();">-</button>
+            <button type="button" onclick="kali();">*</button>
+            <button type="button" onclick="bagi();">/</button>
+        </form>
+    </body>
+	
+</html>
